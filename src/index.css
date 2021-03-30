@@ -1,0 +1,450 @@
+:root
+{
+  --primary-color: #0078d7;
+  --secondary-color: #fff;
+  --text-color: #000; 
+}
+html {
+  scroll-behavior: smooth;
+} 
+.container
+{
+  max-width: 80%;
+  margin:0 auto ;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: 'Montserrat Alternates', sans-serif;font-weight: 600;
+}
+h1{font-size: 48.83px;}h2{font-size: 39.06px;}h3{font-size: 31.25px;}h4{font-size: 25.00px;}h5{font-size: 20.00px;}
+
+p,a,span,ul,ol,li
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+body
+{
+  padding: 0;
+  margin: 0;
+  background-image: url('whirlpool.png');
+}
+.Header
+{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.inner_header
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.Logo a
+{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.Nav-bar
+{
+  display: flex;
+}
+.Nav-bar li
+{
+  margin: 0 10px;
+  list-style: none;
+}
+
+.Nav-bar li a
+{
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: .2s;
+  font-weight: 600;
+}
+.Nav-bar li:hover a
+{
+  color: var(--text-color);
+}
+
+/* About section */
+.Banner
+{
+  height: 80vh;
+  background-image: url('./images/Banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.Inner-benner
+{
+  text-align: center;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.Inner-benner h2{
+  margin: 0;
+}
+
+
+/* About secction */
+
+.About-section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.profile-image
+{
+  padding-right: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-image:hover .image_hover
+{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.image_hover
+{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-width: 866px;
+  /* transform: translateX(-100%); */
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.profile-image img
+{
+  max-width: 866px;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.text-section
+{
+  width: 100%;
+  padding-right: 150px;
+}
+
+/* Skill section */
+.Breaking-point
+{
+  background-color: var(--primary-color);
+}
+.inner-skills
+{
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-color);
+  padding-right: 20px 0;
+}
+.inner-skills > div {
+  flex-basis: 33.33%;
+  padding: 0 20px;
+}
+
+.skill-list
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+.skill-list li
+{
+  flex-basis: 45%;
+  list-style: none;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.skill-list li .progress-bar
+{
+  background-color: burlywood;
+}
+
+/* Work Experience */
+.working-experience
+{
+  text-align: center;
+  color: #fff;
+  padding: 1px;
+}
+.main ul 
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+.main ul li
+{
+  margin: 10px 0;
+  flex-basis: 30%;
+  height: 500px;
+  overflow: hidden;
+  width: 400px;
+  border-radius: 5%;
+  border: 3px solid var(--primary-color);
+  position: relative;
+}
+
+.main ul li img
+{
+
+  max-width: 100%;
+  width: 100%;
+  transform: translateY(-35px);
+  white-space: nowrap;
+  transition: .5s linear;
+
+}
+.main ul li:hover img
+{
+  transform: translateY(calc(385px - 100%));
+}
+
+.work-Title
+{
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  padding: 10px;
+  transition: .5s;
+}
+.work-Title a
+{
+  color:var(--primary-color);
+  text-decoration: none;
+}
+.main ul li:hover .work-Title
+{
+  background-color:  var(--primary-color);
+}
+.main ul li:hover .work-Title a
+{
+  color: #fff;
+}
+/* Footer */
+
+.Footer
+{
+  background-image: url('./images/footer.jpg'); 
+  color: var(--secondary-color);
+  padding: 20px 0 0 0;
+  background-position: center ;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.top-bar
+{
+  text-align: center;
+}
+
+.Services ul
+{
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+.Services ul li
+{
+  list-style: none;
+  flex-basis: 30%;
+}
+.SSIC ul,.Continfo ul 
+{
+  display: flex;
+}
+.SSIC ul li
+{
+  flex-basis: 5%;
+  list-style: none;
+}
+.SSIC ul li a i
+{
+  color: var(--secondary-color);
+  transition: .5s;
+  font-size: 25px;
+}
+
+.SSIC ul li a i:hover
+{
+  color: var(--text-color);
+}
+.Socialmedia
+{
+  display: flex;
+  justify-content: space-between;
+}
+.SSIC,.Continfo
+{
+  flex-basis: 50%;
+}
+.Continfo ul li
+{
+  list-style: none;
+}
+.Continfo ul li a
+{
+  color: var(--secondary-color);
+  padding: 0 10px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.Continfo ul li a:hover
+{
+  color: var(--text-color)
+}
+.copyright
+{
+  margin-top: 20px;
+  background: var(--text-color);
+  padding: 5px
+}
+.copyright p
+{
+  padding: 0;
+  margin: 5px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px)
+{ 
+.container
+{
+  max-width: 90%;
+}
+.inner_header
+{
+  justify-content: center;
+}
+.text-section
+{
+  padding-right: 100px;
+}
+.main ul li
+{
+  flex-basis: 48%;
+}
+.skill-list li
+{
+  flex-basis: 45%;
+} 
+}
+
+
+@media only screen and (max-width: 768px)
+{ 
+  h1{font-size: 38px;}h2{font-size: 32px;}h3{font-size: 26px;}h4{font-size: 22px;}h5{font-size: 18px;}
+.container
+{
+  max-width: 100%;
+}
+.About-section
+{
+  flex-wrap: wrap;
+}
+.Logo a h1
+{
+  text-align: center;
+}
+.profile-image
+{
+  padding: 0;
+}
+.text-section
+{
+  padding: 0 20px;  
+}
+.main ul li
+{
+  flex-basis: 100%;
+}
+.Nav-bar
+{
+  padding: 0;
+}
+.main ul li img
+{
+  max-width: 100%;
+  width: 100%;
+}
+.main ul {
+  padding: 10px;
+}
+.inner-skills
+{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Wordpress
+{
+  text-align: right;
+}
+.Wordpress h4,.HTML h4 ,.JS h4{
+  padding: 10px;
+  margin: 0 ;
+}
+.JS
+{
+  text-align: center;
+}
+.skill-list
+{
+  padding: 10px;
+}
+.skill-list li
+{
+  padding: 10px 0px;
+  flex-basis: 40%;
+}
+.Services ul
+{
+  flex-wrap: wrap;
+}
+.Services ul li {
+  flex-basis: 95%;
+  margin: 0 auto;
+}
+.Socialmedia
+{
+  flex-wrap: wrap;
+}
+
+.SSIC ul li
+{
+  flex-basis: 20%;
+}
+.SSIC, .Continfo {
+  flex-basis: 95%;
+  margin: auto;
+}
+.Continfo ul
+{
+  flex-wrap: wrap;
+}
+.Continfo ul li
+{
+  padding : 5px
+}
+}
